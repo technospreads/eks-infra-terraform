@@ -3,22 +3,19 @@
 ### Creating workstation 
 Make sure that you are having a workstation with below packages
 - git
--	ansible
-- helm
 - terraform
 - python3
 - pip3
 - awscli
 - kubectl
-- packer
 
 
 ## Building Microserivce Platform - EKS:
 → make sure you are configuring aws cli before you start
 
 ```sh 
-→ git clone https://github.com/shan5a6/toptal-task.git
-→ cd toptal-task/eks-infra
+→ git clone https://github.com/shan5a6/eks-infra-terraform.git
+→ cd eks-infra-terraform
 → terraform apply -auto-approve
 ```
 Note: It take around 5-10 minutes to build the eks cluster
