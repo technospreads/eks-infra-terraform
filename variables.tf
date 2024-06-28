@@ -2,7 +2,7 @@ variable "region" {
     default = "us-east-1"
 }
 variable "customer" {
-    default = "toptal"
+    default = "dvs"
 }
 variable "env" {
     default = "dev"
@@ -26,11 +26,11 @@ variable "availability_zones" {
 }
 
 variable "keypair" {
-    default = "toptal-key"
+    default = "dvs-key"
 }
 
 variable "cluster_name" {
-    default = "toptal-eks"
+    default = "dvs-eks"
 }
 
 variable "public_nodes_capacity" {

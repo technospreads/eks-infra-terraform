@@ -16,6 +16,7 @@ Make sure that you are having a workstation with below packages
 ```sh 
 → git clone https://github.com/shan5a6/eks-infra-terraform.git
 → cd eks-infra-terraform
+→ terraform init
 → terraform apply -auto-approve
 ```
 Note: It take around 5-10 minutes to build the eks cluster
