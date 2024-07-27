@@ -9,6 +9,8 @@ Make sure that you are having a workstation with below packages
 - awscli
 - kubectl
 
+### Update the variable ec2_ssh_key with your public key for your server access
+ec2_ssh_key - ssh key in file variables.tf
 
 ## Building Microserivce Platform - EKS:
 → make sure you are configuring aws cli before you start

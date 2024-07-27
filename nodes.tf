@@ -1,6 +1,6 @@
 resource "aws_key_pair" "mykey" {
   key_name   = "${var.keypair}"
-  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCxoqfP6la1XfdLlVtIwhN36i8FzMTh16d7EJZ/ivfDcAzjuWJoXYR7gTSrTGQ5oJuQ/eIm4LmRY+droxzNf7/BnO/6UtEWigNPQFKVNGvefkucpUz2gL0q56rL20eIKVnXmKm5e5qg2U8DIqx/bULxGaFJoDSP288Dd/6KUGkXXgQLlUHRChJbMJVE+r6lqK/mOD4CC8gvRPXwmvRRjLRcChxhLQXsCKOR4CTV4Eh+iM+PDo/wFnzjFcRqBvyXf/0i0+bAyCOpISxTQRecE2ieCsbA09vNOkukwrF1mJZ7L149K4cT8CMoCsy0QCgBLLSDgvptV6Wr0hBPS9T3eeil imported-openssh-key"
+  public_key = "${var.ec2_ssh_key}"
 }
 
 resource "aws_iam_role" "nodes" {
@@ -40,6 +40,7 @@ resource "aws_eks_node_group" "private-nodes" {
   remote_access {
     ec2_ssh_key = "${var.keypair}"
   }  
+  aws_eks_node_group
 
   subnet_ids = aws_subnet.private_subnets.*.id
 
