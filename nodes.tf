@@ -40,7 +40,6 @@ resource "aws_eks_node_group" "private-nodes" {
   remote_access {
     ec2_ssh_key = "${var.keypair}"
   }  
-  aws_eks_node_group
 
   subnet_ids = aws_subnet.private_subnets.*.id
 
