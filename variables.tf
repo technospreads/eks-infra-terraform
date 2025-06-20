@@ -1,8 +1,8 @@
 variable "region" {
-    default = "us-east-1"
+    default = "ap-south-1"
 }
 variable "customer" {
-    default = "dvs"
+    default = "techno"
 }
 variable "ec2_ssh_key" {
     default = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCxoqfP6la1XfdLlVtIwhN36i8FzMTh16d7EJZ/ivfDcAzjuWJoXYR7gTSrTGQ5oJuQ/eIm4LmRY+droxzNf7/BnO/6UtEWigNPQFKVNGvefkucpUz2gL0q56rL20eIKVnXmKm5e5qg2U8DIqx/bULxGaFJoDSP288Dd/6KUGkXXgQLlUHRChJbMJVE+r6lqK/mOD4CC8gvRPXwmvRRjLRcChxhLQXsCKOR4CTV4Eh+iM+PDo/wFnzjFcRqBvyXf/0i0+bAyCOpISxTQRecE2ieCsbA09vNOkukwrF1mJZ7L149K4cT8CMoCsy0QCgBLLSDgvptV6Wr0hBPS9T3eeil imported-openssh-key"
@@ -25,15 +25,15 @@ variable "private_subnets" {
 
 variable "availability_zones" {
     type    = list
-    default = ["us-east-1a","us-east-1b"]    
+    default = ["ap-south-1a,"ap-south-1b"]    
 }
 
 variable "keypair" {
-    default = "dvs-key"
+    default = "techno-key"
 }
 
 variable "cluster_name" {
-    default = "dvs-eks"
+    default = "techno-eks"
 }
 
 variable "public_nodes_capacity" {
