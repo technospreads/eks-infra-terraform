@@ -1,6 +1,6 @@
 # NAT EIPs
 resource "aws_eip" "nat_eip" {
-  vpc   = true
+  #vpc   = true
   count = length(aws_subnet.public_subnets)
 
   tags = {
