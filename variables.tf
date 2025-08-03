@@ -5,7 +5,7 @@ variable "customer" {
     default = "techno"
 }
 variable "ec2_ssh_key" {
-    default = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCxoqfP6la1XfdLlVtIwhN36i8FzMTh16d7EJZ/ivfDcAzjuWJoXYR7gTSrTGQ5oJuQ/eIm4LmRY+droxzNf7/BnO/6UtEWigNPQFKVNGvefkucpUz2gL0q56rL20eIKVnXmKm5e5qg2U8DIqx/bULxGaFJoDSP288Dd/6KUGkXXgQLlUHRChJbMJVE+r6lqK/mOD4CC8gvRPXwmvRRjLRcChxhLQXsCKOR4CTV4Eh+iM+PDo/wFnzjFcRqBvyXf/0i0+bAyCOpISxTQRecE2ieCsbA09vNOkukwrF1mJZ7L149K4cT8CMoCsy0QCgBLLSDgvptV6Wr0hBPS9T3eeil imported-openssh-key"
+    default = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDnnOZHTVetKr804+3skf1XIPxR0xwAefHCZlDWzPRLh9Zd6gmmeeEY+08+hIMYiTRiwCh+g/M9ngqS4Q8pxdLVbDlT7Rytjnj9H76urrjvi03gxd0cBs+/zc56plk1nffKcJQtpaxjgBR9YyezQQFXLApGPJJ1k9i3aHUyJkgjBRBAS1TAY47jegMJyXvr7b9GLqO7JjgFGCugjtbU7qXfFwxLJIlrOU385DmEoe2zqYja8U8RLvv3hk9nkG46JmstpXdZkRrzeZaYtcOC+oNX+LEXMO/fJQBsCK0TDsBEEvyuNhJPPqNyOLZwmrzukTEXlZTfkmNE9kXu12oTcqsp imported-openssh-key"
 }
 variable "env" {
     default = "dev"
@@ -25,7 +25,7 @@ variable "private_subnets" {
 
 variable "availability_zones" {
     type    = list
-    default = ["ap-south-1a,"ap-south-1b"]    
+    default = ["ap-south-1a","ap-south-1b"]    
 }
 
 variable "keypair" {
